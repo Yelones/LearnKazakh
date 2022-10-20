@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> - Learn Kazakh</title>
+
+		<link type="text/css" rel="stylesheet" href="./styles.css" />
+		<script src="./config.js"></script>
+		<script src="./helper.js"></script>
+        <script>
+			let lesson = document.createElement("script");
+			lesson.setAttribute("src", "./" + getActiveLevelName() + "/" + window.location.hash.substring(1) + ".js");
+			lesson.setAttribute("type", "text/javascript");
+
+			document.querySelector("head").append(lesson);
+        </script>
+	</head>
+	<body>
+		<div class="menu-wrapper"></div>
+		<div class="lesson-wrapper"></div>
+
+		<script>
+			window.addEventListener('DOMContentLoaded', (event) => {
+				let menu = document.createElement("script");
+				menu.setAttribute("src", "./menu.js");
+				menu.setAttribute("type", "text/javascript");
+
+				let script = document.createElement("script");
+				script.setAttribute("src", "./script.js");
+				script.setAttribute("type", "text/javascript");
+
+				document.querySelector("body").append(script);
+				document.querySelector("body").append(menu);
+			});
+		</script>
+	</body>
+</html>

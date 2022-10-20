@@ -1,0 +1,72 @@
+body {
+    --main-bg-color: #1c1838;
+    --main-btn-color: #477eb7;
+    --main-btn-color-hover: #ad45af;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: var(--main-bg-color);
+}
+
+button {
+    width: 150px;
+    padding: 10px 15px;
+    margin: 3px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--main-btn-color);
+    font-size: 20px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #eee;
+    background-color: var(--main-btn-color-hover);
+}
+
+button:active {
+    background-color: var(--main-btn-color);
+    color: #111;
+}
+
+.level-menu {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--main-btn-color);
+}
+
+.level-menu-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.level-menu-item:hover {
+    cursor: pointer;
+    background-color: var(--main-btn-color-hover);
+    color: #eee;
+}
+
+.level-menu-item:active {
+    background-color: var(--main-btn-color);
+    color: #111;
+}
+
+.level-menu-item:first-child {
+    border-right: 1px solid #315b87;
+}
+
+.level-menu-item:last-child {
+    border-left: 1px solid #315b87;
+}
