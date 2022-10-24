@@ -1,6 +1,11 @@
 let lessonWrapper = document.querySelector('.lesson-wrapper');
 let activeWord;
 
+if (!words) {
+    console.log("Reloading, no words found");
+    window.location.reload();
+}
+
 function loadLesson()
 {
     let lessonButtons = document.querySelector(".lesson-buttons");

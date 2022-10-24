@@ -9,7 +9,7 @@
 		<script src="./helper.js"></script>
         <script>
 			let lesson = document.createElement("script");
-			lesson.setAttribute("src", "./" + getActiveLevelName() + "/" + window.location.hash.substring(1) + ".js");
+			lesson.setAttribute("src", "./" + getActiveLevelName() + "/" + getActiveLessonName() + ".js");
 			lesson.setAttribute("type", "text/javascript");
 
 			document.querySelector("head").append(lesson);
