@@ -10,6 +10,10 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.hidden {
+    display: none !important;
+}
+
 button {
     width: 150px;
     padding: 10px 15px;
@@ -69,4 +73,76 @@ button:active {
 
 .level-menu-item:last-child {
     border-left: 1px solid #315b87;
+}
+
+.lesson-menu {
+    display: flex;
+    background-color: #cd6969;
+    margin: 0;
+    list-style: none;
+}
+
+.lesson-menu .lesson-menu-item {
+    display: flex;
+    background-color: #cd6969;
+    margin: 0;
+    list-style: none;
+}
+
+.lesson-menu .lesson-menu-item {
+    padding: 10px;
+}
+
+.lesson-menu .lesson-menu-item:hover {
+    background-color: #a04444;
+    color: #eee;
+    cursor: pointer;
+}
+
+.lesson-wrapper {
+    padding: 10px;
+}
+
+.lesson-card {
+    display: inline-block;
+    min-width: 300px;
+    background-color: #cd6969;
+    border-radius: 3px;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+.lesson-card .play-again {
+    vertical-align: super;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.lesson-card .word {
+    font-size: 32px;
+    color: #eee;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.lesson-card .transcription {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.lesson-card .translation {
+    font-size: 26px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.lesson-card .examples, .lesson-card .variants {
+    margin-top: 10px;
+}
+
+.lesson-card .examples .examples-content, .lesson-card .variants .variants-content {
+    background-color: #d38181;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 18px;
 }
