@@ -1,8 +1,7 @@
 let lessonWrapper = document.querySelector('.lesson-wrapper');
 let activeWord;
 
-if (!words) {
-    console.log("Reloading, no words found");
+if (!words || words == undefined) {
     window.location.reload();
 }
 
