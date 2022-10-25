@@ -35,6 +35,11 @@ button:active {
     background-color: var(--main-btn-color);
 }
 
+#app {
+    width: 1200px;
+    margin: auto;
+}
+
 .level-menu {
     display: flex;
     flex-grow: 1;
@@ -73,6 +78,7 @@ button:active {
 
 .lesson-menu {
     display: flex;
+    flex-flow: wrap;
     background-color: #cd6969;
     margin: 0;
     list-style: none;
@@ -147,4 +153,24 @@ button:active {
     border-radius: 3px;
     padding: 5px;
     font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    #app {
+        width: 100%;
+    }
+
+    /* .lesson-menu {
+        flex-flow: nowrap;
+        overflow: auto;
+    } */
+
+    .lesson-buttons {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    .lesson-card {
+        width: calc(100% - 40px);
+    }
 }
