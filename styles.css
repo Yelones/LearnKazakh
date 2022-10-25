@@ -160,6 +160,10 @@ button:active {
         width: 100%;
     }
 
+    button {
+        min-width: auto;
+    }
+
     /* .lesson-menu {
         flex-flow: nowrap;
         overflow: auto;
