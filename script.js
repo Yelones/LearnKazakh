@@ -9,8 +9,13 @@ function loadLesson()
 {
     let lessonButtons = document.querySelector(".lesson-buttons");
 
+    words = Object.entries(words)
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
+
     for (var key in words) {
-        let word = words[key];
+        let word = words[key][1];
     
         let button = document.createElement("button");
     
