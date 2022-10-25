@@ -1,7 +1,7 @@
 body {
     --main-bg-color: #1c1838;
     --main-btn-color: #477eb7;
-    --main-btn-color-hover: #ad45af;
+    --main-btn-color-hover: #80addb;
 }
 
 body {
@@ -28,13 +28,11 @@ button {
 }
 
 button:hover {
-    color: #eee;
     background-color: var(--main-btn-color-hover);
 }
 
 button:active {
     background-color: var(--main-btn-color);
-    color: #111;
 }
 
 .level-menu {
@@ -59,12 +57,10 @@ button:active {
 .level-menu-item:hover {
     cursor: pointer;
     background-color: var(--main-btn-color-hover);
-    color: #eee;
 }
 
 .level-menu-item:active {
     background-color: var(--main-btn-color);
-    color: #111;
 }
 
 .level-menu-item:first-child {
@@ -94,7 +90,7 @@ button:active {
 }
 
 .lesson-menu .lesson-menu-item:hover {
-    background-color: #a04444;
+    background-color: #d38181;
     color: #eee;
     cursor: pointer;
 }
