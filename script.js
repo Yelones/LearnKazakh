@@ -108,6 +108,7 @@ function populateLessonCard(word)
 function playAudio()
 {
 	let sound = new Audio(ABAI_BASE_URL + activeWord.audio);
+    sound.volume = .5;
 	sound.play();
 }
 
