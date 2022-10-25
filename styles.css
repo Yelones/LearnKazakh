@@ -57,6 +57,7 @@ button:active {
     padding: 20px;
     font-size: 22px;
     font-weight: bold;
+    user-select: none;
 }
 
 .level-menu-item:hover {
@@ -89,6 +90,7 @@ button:active {
     background-color: #cd6969;
     margin: 0;
     list-style: none;
+    user-select: none;
 }
 
 .lesson-menu .lesson-menu-item {
