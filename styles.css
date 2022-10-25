@@ -114,8 +114,9 @@ button:active {
 }
 
 .lesson-card .play-again {
-    vertical-align: super;
-    margin-right: 5px;
+    font-size: 24px;
+    margin-left: -10px;
+    vertical-align: text-bottom;
     cursor: pointer;
 }
 
